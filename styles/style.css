@@ -1,0 +1,255 @@
+body {
+    font-family: "Great Vibes", cursive;
+    color: #5cfc0060;
+    background: url('../images/asa.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url("../images/ark.2.png");
+    background-size: cover;
+    border-bottom: 2px solid rgb(115, 255, 0);
+    opacity: 1;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgb(10, 207, 207);
+    color: #000;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+    background-image: url("../images/center.png");
+    background-size: cover;
+    opacity: 1; /* Ajusta el nivel de transparencia (0.5 para 50%) */
+    font-family: "Great Vibes", cursive;
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid rgb(187, 255, 0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: rgb(255, 153, 0);
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+footer ul li a:hover {
+    background: rgb(0, 150, 250);
+    color: #000;
+}
+/* Estilos específicos para el portafolio en columnas */
+.column-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column-container .project {
+    flex: 1 1 calc(25% - 20px); /* Tres columnas con espacio */
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.815);
+    opacity: 1;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.column-container .project:hover {
+    transform: scale(1.1); /* Aumentar el tamaño */
+    z-index: 1; /* Asegurarse que se superponga a los demás */
+}
+
+.column-container .project:hover ~ .project {
+    opacity: 0.5; /* Opaque los demás */
+}
+
+
+
+.welcome-page, .verification-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#enter-button {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: rgba(252, 112, 221, 0.664);
+    color: rgb(100, 17, 179);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#enter-button:hover {
+    transform: scale(1.1);
+    background-color: #0ff;
+}
+
+.verification-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.verification-page form input {
+    padding: 10px;
+    border: 2px solid rgb(0, 255, 34);
+    border-radius: 5px;
+    background: transparent;
+    color: rgb(19, 223, 0);
+}
+
+.verification-page form button {
+    padding: 10px;
+    border: none;
+    background-color: #00f;
+    color: rgb(33, 201, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.verification-page form button:hover {
+    background-color: rgb(0, 248, 21);
+}
+
+.about img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.services .service, .portfolio .project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.services .service:hover, .portfolio .project:hover {
+    transform: scale(1.05);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact form label {
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    border: 2px solid #00f;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+}
+
+.contact form textarea {
+    resize: vertical;
+}
+
+.contact form button {
+    padding: 10px;
+    border: none;
+    background-color: #00f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #0ff;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.derecha {
+    float: right; /* Mueve la imagen a la derecha */
+    margin-left: 10px; /* Añade un poco de espacio a la izquierda de la imagen */
+}
+
+.centro {
+    display: block; /* Hace que la imagen sea un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 20%;
+    height: 20%;
+}
+
+.izquierda {
+    float: left; /* Mueve la imagen a la izquierda */
+    margin-right: 10px; /* Añade un poco de espacio a la derecha de la imagen */
+    width: 150px;
+    height: 100px;
+}
